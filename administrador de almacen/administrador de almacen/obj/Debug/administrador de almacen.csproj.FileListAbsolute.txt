@@ -1,0 +1,26 @@
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe.config
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.pdb
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csprojAssemblyReference.cache
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form1.resources
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form2.resources
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form3.resources
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Properties.Resources.resources
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.GenerateResource.cache
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CoreCompileInputs.cache
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.exe
+C:\Users\adolf\source\repos\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.pdb
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe.config
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.pdb
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\bin\Debug\MySql.Data.dll
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csprojAssemblyReference.cache
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form1.resources
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form2.resources
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form3.resources
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Properties.Resources.resources
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.GenerateResource.cache
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CoreCompileInputs.cache
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CopyComplete
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.exe
+C:\Users\Meny Ruiz\Desktop\proyecto SI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.pdb
