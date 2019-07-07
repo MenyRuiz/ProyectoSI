@@ -28,13 +28,11 @@ namespace administrador_de_almacen
         {
 
         }
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e){}
         private void Form3_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = vista.Vista1();
+            label5.Text = DateTime.Now.ToLongDateString();
         }
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -43,11 +41,14 @@ namespace administrador_de_almacen
         }
         private void Label9_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            Form1 volverlogin = new Form1();
+            volverlogin.Show();
         }
         private void Label8_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        private void Label5_Click(object sender, EventArgs e){}
     }
 }

@@ -34,9 +34,11 @@ namespace administrador_de_almacen
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || textBox1.Text == "Nombre" || string.IsNullOrWhiteSpace(textBox2.Text) || textBox2.Text == "Usuario" || string.IsNullOrWhiteSpace(textBox3.Text) || textBox3.Text == "Contraseña")
             {
-                MessageBox.Show("Debes completar todos los campos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                this.Hide();
+                Form4 advertencia = new Form4();
+                advertencia.Show();
             }
             else
             {
@@ -53,8 +55,9 @@ namespace administrador_de_almacen
                 }
                 else
                 {
-                    MessageBox.Show("No Se Pudo Realizar El Registro!!", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Resett();
+                    this.Hide();
+                    Form4 advertencia = new Form4();
+                    advertencia.Show();
                 }
             }
             }
@@ -66,7 +69,9 @@ namespace administrador_de_almacen
         }
         private void Label3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            Form1 volverlogin = new Form1();
+            volverlogin.Show();
         }
         private void Label2_Click(object sender, EventArgs e)
         {

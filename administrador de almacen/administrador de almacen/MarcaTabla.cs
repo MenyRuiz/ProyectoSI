@@ -12,7 +12,7 @@ namespace administrador_de_almacen
         string instruction;
         public DataTable Vista1()
         {
-            instruction = "SELECT * from usuarios";
+            instruction = "SELECT * from productos";
             MySqlDataAdapter adp = new MySqlDataAdapter(instruction, ObtenerConexion());
             DataTable consulta = new DataTable();
             adp.Fill(consulta);

@@ -10,24 +10,18 @@ using System.Windows.Forms;
 
 namespace administrador_de_almacen
 {
-    public partial class Form4 : Form
+    public partial class Form5 : Form
     {
-        public Form4()
+        public Form5()
         {
             InitializeComponent();
         }
-        private void Label1_Click(object sender, EventArgs e){}
+
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 volverregistro = new Form2();
-            volverregistro.Show();
-        }
-        private void Label9_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form2 volverregistro = new Form2();
-            volverregistro.Show();
+            Form1 volverlogin = new Form1();
+            volverlogin.Show();
         }
     }
 }

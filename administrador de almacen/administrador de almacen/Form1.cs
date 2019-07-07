@@ -39,7 +39,9 @@ namespace administrador_de_almacen
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrect@, Pruebe de nuevo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                this.Hide();
+                Form5 advertencia = new Form5();
+                advertencia.Show();
             }
             con.Close();
         }
