@@ -53,7 +53,8 @@ namespace administrador_de_almacen
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            textBox1.CharacterCasing = CharacterCasing.Upper;
+
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -74,32 +75,37 @@ namespace administrador_de_almacen
         {
             if (textBox1.Text == "")
             {
-                textBox1.Text = "Usuario 👤";
+                textBox1.Text = "USUARIO 👤";
                 textBox1.ForeColor = Color.Gray;
+                textBox1.CharacterCasing = CharacterCasing.Upper;
             }
         }
         private void TextBox1_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Usuario 👤")
+            if (textBox1.Text == "USUARIO 👤")
             {
                 textBox1.Text = "";
                 textBox1.ForeColor = Color.White;
+                textBox1.CharacterCasing = CharacterCasing.Upper;
             }
+            
         }
         private void TextBox2_Enter(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Contraseña 🔑")
+            if (textBox2.Text == "CONTRASEÑA 🔑")
             {
                 textBox2.Text = "";
                 textBox2.ForeColor = Color.Black;
                 textBox2.UseSystemPasswordChar = true;
+
             }
+            
         }
         private void TextBox2_Leave(object sender, EventArgs e)
         {
             if (textBox2.Text == "")
             {
-                textBox2.Text = "Contraseña 🔑";
+                textBox2.Text = "CONTRASEÑA 🔑";
                 textBox2.ForeColor = Color.Gray;
                 textBox2.UseSystemPasswordChar = false;
             }
@@ -107,6 +113,59 @@ namespace administrador_de_almacen
             {
                 textBox2.UseSystemPasswordChar = true;
             }
+        }
+
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                con.Open();
+                codigo.Connection = con;
+                codigo.CommandText = ("select * from usuarios where Usuario ='" + textBox1.Text + "' and Contraseña = '" + textBox2.Text + "'");
+                MySqlDataReader leer = codigo.ExecuteReader();
+                if (leer.Read())
+                {
+                    this.Hide();
+                    Form3 sin = new Form3();
+                    sin.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    Form5 advertencia = new Form5();
+                    advertencia.Show();
+                }
+                con.Close();
+            }
+        }
+
+        private void TextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                con.Open();
+                codigo.Connection = con;
+                codigo.CommandText = ("select * from usuarios where Usuario ='" + textBox1.Text + "' and Contraseña = '" + textBox2.Text + "'");
+                MySqlDataReader leer = codigo.ExecuteReader();
+                if (leer.Read())
+                {
+                    this.Hide();
+                    Form3 sin = new Form3();
+                    sin.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    Form5 advertencia = new Form5();
+                    advertencia.Show();
+                }
+                con.Close();
+            }
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
