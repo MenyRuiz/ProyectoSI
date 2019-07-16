@@ -54,3 +54,4 @@ C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de 
 C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form5.resources
 C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\MySql.Data.dll
 C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CopyComplete
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form6.resources

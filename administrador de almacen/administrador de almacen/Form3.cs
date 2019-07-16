@@ -15,6 +15,7 @@ namespace administrador_de_almacen
 {
     public partial class Form3 : Form
     {
+        public string[] vector;
 
         private void Agrega()
         {
@@ -33,7 +34,6 @@ namespace administrador_de_almacen
                 pProductos.fecha = dateTimePicker1.Value.Year + "/" + dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day;
 
                 int resultado = ProductosDAL.AgregarP(pProductos);
-
                 if (resultado > 0)
                 {
                     MessageBox.Show("Registro Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -46,14 +46,21 @@ namespace administrador_de_almacen
             }
         }
 
+        
+
+     
 
         MarcaTabla vista = new MarcaTabla();
 
+      
 
         public Form3()
         {
             InitializeComponent();
         }
+        public Productos ProductoSeleccionado { get; set; }
+        public Productos ProductoActual { get; set; }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -76,6 +83,8 @@ namespace administrador_de_almacen
             textBox4.BorderStyle = BorderStyle.None;
             textBox5.Enabled = false;
             textBox5.BorderStyle = BorderStyle.None;
+
+            
         }
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -108,12 +117,14 @@ namespace administrador_de_almacen
         private void Button4_Click(object sender, EventArgs e)
         {
             Agrega();
+            
         }
         private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 Agrega();
+               
             }
         }
         private void TextBox5_KeyPress(object sender, KeyPressEventArgs e)
@@ -121,6 +132,7 @@ namespace administrador_de_almacen
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 Agrega();
+                
             }
         }
         private void TextBox4_KeyPress(object sender, KeyPressEventArgs e)
@@ -128,6 +140,7 @@ namespace administrador_de_almacen
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 Agrega();
+                
             }
         }
         private void ComboBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -135,7 +148,35 @@ namespace administrador_de_almacen
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 Agrega();
+            
             }
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Form6 buscar = new Form6();
+            buscar.ShowDialog();
+
+            if (buscar.ProductoSeleccionado != null)
+            {
+                ProductoActual = buscar.ProductoSeleccionado;
+                textBox1.Text = buscar.ProductoSeleccionado.nombre;
+                textBox4.Text = Convert.ToString(buscar.ProductoSeleccionado.precio);
+                textBox5.Text = Convert.ToString(buscar.ProductoSeleccionado.cantidad);
+                textBox3.Text = buscar.ProductoSeleccionado.total;
+                comboBox1.Text = buscar.ProductoSeleccionado.concepto;
+                dateTimePicker1.Text = buscar.ProductoSeleccionado.fecha;
+            }
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
