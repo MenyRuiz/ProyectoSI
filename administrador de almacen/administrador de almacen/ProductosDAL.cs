@@ -31,13 +31,12 @@ namespace administrador_de_almacen
                 pProducto.nombre = _reader.GetString(1);
                 pProducto.precio = _reader.GetDouble(2);
                 pProducto.cantidad = _reader.GetInt32(3);
-                pProducto.total = _reader.GetString(4);
+                pProducto.total = _reader.GetDouble(4);
                 pProducto.concepto = _reader.GetString(5);
                 pProducto.fecha = _reader.GetString(6);
                 _lista.Add(pProducto);
             }
             return _lista;
-           
         }
         public static Productos ObtenerProducto(int pid_producto)
         {
@@ -52,15 +51,32 @@ namespace administrador_de_almacen
                 pProducto.nombre = _reader.GetString(1);
                 pProducto.precio = _reader.GetDouble(2);
                 pProducto.cantidad = _reader.GetInt32(3);
-                pProducto.total = _reader.GetString(4);
+                pProducto.total = _reader.GetDouble(4);
                 pProducto.concepto = _reader.GetString(5);
                 pProducto.fecha = _reader.GetString(6);
-               
-
             }
-
             conexion.Close();
             return pProducto;
+        }
+        public static int Actualizar(Productos pProducto)
+        {
+            int retorno = 0;
+            MySqlConnection conexion = BdComun.ObtenerConexion();
+
+            MySqlCommand comando = new MySqlCommand(string.Format("Update productos set nombre='{0}', precio='{1}', cantidad='{2}', total= cantidad * precio, concepto='{3}', fecha='{4}' where id_producto={5}",
+                pProducto.nombre, pProducto.precio, pProducto.cantidad, pProducto.concepto, pProducto.fecha, pProducto.id_producto), conexion);
+            retorno = comando.ExecuteNonQuery();
+            conexion.Close();
+            return retorno;
+        }
+        public static int Eliminar(int pid_productos)
+        {
+            int retorno = 0;
+            MySqlConnection conexion = BdComun.ObtenerConexion();
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From productos where id_producto={0}", pid_productos), conexion);
+            retorno = comando.ExecuteNonQuery();
+            conexion.Close();
+            return retorno;
         }
     }
 }

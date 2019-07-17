@@ -45,8 +45,36 @@ namespace administrador_de_almacen
                 }
             }
         }
+        private void Actualiza()
+        {
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox4.Text)
+             || string.IsNullOrWhiteSpace(textBox5.Text) || comboBox1.Text == "No especificado")
+            {
+                MessageBox.Show("Debes completar todos los campos o especificar el concepto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Productos pProducto = new Productos();
+                pProducto.nombre = textBox1.Text.Trim();
+                pProducto.precio = Convert.ToDouble(textBox4.Text.Trim());
+                pProducto.cantidad = Convert.ToInt32(textBox5.Text.Trim());
+                pProducto.total = Convert.ToDouble(textBox3.Text.Trim());
+                pProducto.concepto = comboBox1.Text.Trim();
+                pProducto.fecha = dateTimePicker1.Value.Year + "/" + dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day;
 
-        
+                pProducto.id_producto = ProductoActual.id_producto;
+
+
+                if (ProductosDAL.Actualizar(pProducto) > 0)
+                {
+                    MessageBox.Show("Datos Actualizados", "Actualizados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Datos no actualizados", "No Actualizados", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        }
 
      
 
@@ -73,18 +101,6 @@ namespace administrador_de_almacen
         private void Form3_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = vista.Vista1();
-            label5.Text = DateTime.Now.ToLongDateString();
-
-            button4.Enabled = false;
-            button4.ForeColor = Color.Gray;
-            textBox1.Enabled = false;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox4.Enabled = false;
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox5.Enabled = false;
-            textBox5.BorderStyle = BorderStyle.None;
-
-            
         }
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -105,14 +121,18 @@ namespace administrador_de_almacen
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            button4.Enabled = true;
-            button4.ForeColor = Color.White;
-            textBox1.Enabled = true;
-            textBox1.BorderStyle = BorderStyle.Fixed3D;
-            textBox4.Enabled = true;
-            textBox4.BorderStyle = BorderStyle.Fixed3D;
-            textBox5.Enabled = true;
-            textBox5.BorderStyle = BorderStyle.Fixed3D;
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            label7.Visible = true;
+            textBox1.Visible = true;
+            textBox3.Visible = true;
+            textBox3.Enabled = false;
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox4.Visible = true;
+            textBox5.Visible = true;
+            comboBox1.Visible = true;
         }
         private void Button4_Click(object sender, EventArgs e)
         {
@@ -168,15 +188,54 @@ namespace administrador_de_almacen
                 textBox1.Text = buscar.ProductoSeleccionado.nombre;
                 textBox4.Text = Convert.ToString(buscar.ProductoSeleccionado.precio);
                 textBox5.Text = Convert.ToString(buscar.ProductoSeleccionado.cantidad);
-                textBox3.Text = buscar.ProductoSeleccionado.total;
+                textBox3.Text = Convert.ToString(buscar.ProductoSeleccionado.total);
                 comboBox1.Text = buscar.ProductoSeleccionado.concepto;
                 dateTimePicker1.Text = buscar.ProductoSeleccionado.fecha;
             }
-        }
 
+
+        }
         private void Button5_Click(object sender, EventArgs e)
         {
-         
+            Actualiza();
+            dataGridView1.DataSource = vista.Vista1();
+        }
+
+        private void TextBox4_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox5.Text)){}
+            else
+            {
+                textBox3.Text = Convert.ToString(Convert.ToDouble(textBox4.Text) * Convert.ToInt32(textBox5.Text));
+            }
+            
+        }
+
+        private void TextBox5_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox5.Text)) { }
+            else
+            {
+                textBox3.Text = Convert.ToString(Convert.ToDouble(textBox4.Text) * Convert.ToInt32(textBox5.Text));
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Esta Seguro que desea eliminar el producto", "Estas seguro?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (ProductosDAL.Eliminar(ProductoActual.id_producto) > 0)
+                {
+                    MessageBox.Show("Producto eliminado con exito!", "Producto eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dataGridView1.DataSource = vista.Vista1();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo eliminar el producto", "Producto no eliminado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+                MessageBox.Show("Se cancelo la eliminacion", "Eliminacion cancelada", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
     }
 }

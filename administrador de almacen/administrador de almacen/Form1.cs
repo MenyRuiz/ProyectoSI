@@ -35,7 +35,7 @@ namespace administrador_de_almacen
             {
                 this.Hide();
                 Form3 sin = new Form3();
-                sin.Show();
+                sin.ShowDialog();
             }
             else
             {

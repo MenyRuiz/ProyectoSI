@@ -12,12 +12,12 @@ namespace administrador_de_almacen
         public string nombre { get; set; }
         public double precio { get; set; }
         public int cantidad { get; set; }
-        public string total { get; set; }
+        public double total { get; set; }
         public string concepto { get; set; }
         public string fecha { get; set; }
 
         public Productos() { }
-        public Productos(int pid_producto, string pnombre, double pprecio, int pcantidad, string ptotal, string pconcepto, string pfecha)
+        public Productos(int pid_producto, string pnombre, double pprecio, int pcantidad, double ptotal, string pconcepto, string pfecha)
         {
             this.id_producto = pid_producto;
             this.nombre = pnombre;
