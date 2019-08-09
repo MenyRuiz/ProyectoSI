@@ -19,9 +19,12 @@ namespace administrador_de_almacen
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 volverlogin = new Form1();
-            volverlogin.Show();
+            this.Close();
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

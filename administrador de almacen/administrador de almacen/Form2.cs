@@ -50,7 +50,8 @@ namespace administrador_de_almacen
                 if (resultado > 0)
                 {           
                     Usuarios pUsuario = new Usuarios();
-                    MessageBox.Show("Registro Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Form8 Mensaje_exito = new Form8();
+                    Mensaje_exito.ShowDialog();
                     Resett();
                 }
                 else

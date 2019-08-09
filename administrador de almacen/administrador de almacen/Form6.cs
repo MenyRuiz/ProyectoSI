@@ -16,6 +16,7 @@ namespace administrador_de_almacen
         {
             InitializeComponent();
         }
+        MarcaTabla vista = new MarcaTabla();
         public Productos ProductoSeleccionado { get; set; }
         public Productos ProductoActual { get; set; }
 
@@ -35,8 +36,42 @@ namespace administrador_de_almacen
             }
             else
             {
-                MessageBox.Show("debe de seleccionar una fila");
+                Form12 error = new Form12();
+                error.ShowDialog();
             }
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                dataGridView1.DataSource = ProductosDAL.Buscar1(textBox1.Text);
+            }
+        }
+
+        private void Label9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = vista.Vista1();
         }
     }
 }

@@ -83,6 +83,16 @@ namespace administrador_de_almacen.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icono_admiracion {
+            get {
+                object obj = ResourceManager.GetObject("icono admiracion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO_SI {
             get {
                 object obj = ResourceManager.GetObject("LOGO SI", resourceCulture);

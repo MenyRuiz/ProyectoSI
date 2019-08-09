@@ -55,3 +55,61 @@ C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de 
 C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\MySql.Data.dll
 C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CopyComplete
 C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form6.resources
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form10.resources
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form11.resources
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form12.resources
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form7.resources
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form8.resources
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form9.resources
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\itextsharp.dll
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\itextsharp.xtra.dll
+C:\Users\Meny Ruiz\Desktop\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\itextsharp.xml
+F:\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe.config
+F:\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe
+F:\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.pdb
+F:\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\MySql.Data.dll
+F:\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\itextsharp.xml
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csprojAssemblyReference.cache
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form1.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form10.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form11.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form12.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form2.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form3.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form4.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form5.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form6.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form7.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form8.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form9.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Properties.Resources.resources
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.GenerateResource.cache
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CoreCompileInputs.cache
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CopyComplete
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.exe
+F:\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.pdb
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe.config
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.exe
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\administrador de almacen.pdb
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\MySql.Data.dll
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\bin\Debug\itextsharp.xml
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csprojAssemblyReference.cache
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form1.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form10.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form11.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form12.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form2.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form3.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form4.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form5.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form6.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form7.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form8.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Form9.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador_de_almacen.Properties.Resources.resources
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.GenerateResource.cache
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CoreCompileInputs.cache
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.csproj.CopyComplete
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.exe
+C:\Users\Meny Ruiz\Documents\MenyRespaldo\9a\ProyectoSI\administrador de almacen\administrador de almacen\obj\Debug\administrador de almacen.pdb

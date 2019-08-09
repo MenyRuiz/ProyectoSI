@@ -19,15 +19,11 @@ namespace administrador_de_almacen
         private void Label1_Click(object sender, EventArgs e){}
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 volverregistro = new Form2();
-            volverregistro.Show();
+            this.Close();
         }
         private void Label9_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 volverregistro = new Form2();
-            volverregistro.Show();
+            this.Close();
         }
     }
 }
